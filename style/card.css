@@ -1,0 +1,253 @@
+.card {
+    width: 350px;
+    height: 500px;
+    border-radius: 15px;
+    perspective: 850px;
+    transition: transform 1s;
+    position: relative;
+}
+  
+  #front, #back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+    border-radius: 25px;
+    transition: 700ms;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.346);
+  }
+  
+  #front {
+    background-image: url('assets/card/front.png');
+    background-size: cover;
+    z-index: 1;
+    backface-visibility: hidden;
+  }
+  
+  #back {
+    background-image: url('assets/card/back.png');
+    background-size: cover;
+    transform: rotateY(-180deg);
+    backface-visibility: hidden;
+  }
+  
+  .card:hover #front {
+    transform: rotateY(180deg);
+    z-index: 0;
+  }
+  
+  .card:hover #back {
+    transform: rotateY(0);
+    z-index: 1;
+  }
+  .editardiv {
+    position: absolute;
+    font-size: 35px;
+    color: white;
+    z-index: 10;
+    top: 40px;
+    right: 30px;
+    cursor: pointer;
+    text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.346);
+  }
+  .editardiv:active {
+    color: rgb(194, 194, 194);
+  }
+  .sair {
+    position: absolute;
+    font-size: 35px;
+    color: white;
+    z-index: 10;
+    top: 40px;
+    right: 90px;
+    cursor: pointer;
+    text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.346);
+  }
+  .sair:active {
+    color: rgb(194, 194, 194);
+  }
+  .info {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    position: absolute;
+  }
+  #imgperfil {
+    background-image: url(assets/card/avatar/male-01.svg);
+    background-size: cover;
+    background-position: center;
+    width: 140px;
+    height: 172px;
+    top: 115px;
+    left: 49.8%;
+    transform: translate(-50%);
+    position: absolute;
+    transition: 0.5s ease-in;
+  }
+  .codebar {
+    width: 150px;
+    bottom: 120px;
+    left: 50%;
+    transform: translate(-50%);
+    position: absolute;
+  }
+  #nome {
+    font-size: auto;
+    top: 40px;
+    left: 50%;
+    transform: translate(-50%);
+    color: white;
+    text-align: center;
+    width: 100%;
+  }
+
+  #cargo {
+    font-size: 18px;
+    top: 75px;
+    left: 50%;
+    transform: translate(-50%);
+    font-weight: 500;
+    color: white;
+  }
+  #email {
+    font-size: 18px;
+    bottom: 50px;
+    left: 50%;
+    transform: translate(-50%);
+    font-weight: 500;
+    color: rgb(56, 56, 56);
+    text-align: center;
+    width: 90%;
+  }
+  #telefone {
+    font-size: 18px;
+    bottom: 75px;
+    left: 50%;
+    transform: translate(-50%);
+    font-weight: 500;
+    color: rgb(56, 56, 56);
+    text-align: center;
+    width: 90%;
+  }
+  .vcodebar {
+    width: 170px;
+    top: 60px;
+    left: 50%;
+    transform: translate(-50%);
+    position: absolute;
+  }
+  .vlogo {
+    width: 140px;
+    top: 162px;
+    left: 50%;
+    transform: translate(-50%);
+    position: absolute;
+  }
+  .backflex {
+    position: absolute;
+    bottom: 20px;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    flex-direction: column;
+    width: 94%;
+    gap: 10px;
+  }
+  #vnome {
+    width: 93%;
+    background-color: white;
+    color: black;
+    font-size: 18px;
+    padding: 10px 15px 10px 15px;
+    border: 2px solid rgb(255, 255, 255);
+    border-radius: 10px;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  .flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    width: 100%;
+  }
+  #vcpf {
+    width: 45%;
+    font-size: 15px;
+    padding: 10px 15px 10px 15px;
+    border: 2px solid rgb(255, 255, 255);
+    border-radius: 10px;
+    background-color: white;
+    color: black;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  #vnascimento {
+    width: 45%;
+    font-size: 15px;
+    padding: 10px 15px 10px 15px;
+    border: 2px solid rgb(255, 255, 255);
+    border-radius: 10px;
+    background-color: white;
+    color: black;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  #vcargo {
+    width: 93%;
+    font-size: 18px;
+    padding: 10px 15px 10px 15px;
+    border: 2px solid rgb(255, 255, 255);
+    border-radius: 10px;
+    background-color: white;
+    color: black;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  #vemail {
+    width: 93%;
+    font-size: 18px;
+    padding: 10px 15px 10px 15px;
+    border: 2px solid rgb(255, 255, 255);
+    border-radius: 10px;
+    background-color: white;
+    color: black;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  #vtelefone {
+    width: 93%;
+    font-size: 18px;
+    padding: 10px 15px 10px 15px;
+    border: 2px solid rgb(255, 255, 255);
+    border-radius: 10px;
+    background-color: white;
+    color: black;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
+  @media (max-width: 800px) {
+    .editardiv {
+      position: absolute;
+      font-size: 35px;
+      color: white;
+      z-index: 10;
+      top: 20px;
+      right: 20px;
+      cursor: pointer;
+      text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.346);
+    }
+    .sair {
+      position: absolute;
+      font-size: 35px;
+      color: white;
+      z-index: 10;
+      top: 20px;
+      right: 80px;
+      cursor: pointer;
+      text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.346);
+    }
+  }
+
+  
